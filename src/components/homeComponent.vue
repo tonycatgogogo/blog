@@ -7,9 +7,11 @@
                 <h3> - 前端工程师 - </h3>
                 <p>相信代码可以改变世界 </p>
                 <div class="home_content row">
-                    <span class="time col-xs-12" v-if="imgList.enddate">{{(imgList.enddate)}}</span>
+                    <span class="time col-xs-12" v-if="imgList.enddate">{{(imgList.enddate) | dateFormat}}</span>
                     <p class="disc col-xs-12" :key="imgList.enddate">{{imgList.copyright}}</p>
                 </div>
+                <span title="bing" class="tips">每日一图由 bing 提供 | Copyright © 2016~2019 DAIWEI.ORG
+                </span>
             </div>
         </div>
     </div>
@@ -21,25 +23,21 @@
             return {
                 imgList:{},
                 url: '',
-                getImgUrl: 'http://s.cn.bing.net'
+                getImgUrl: 'https://s.cn.bing.net'
             }
         },
         created(){
             this.getImg()
         },
         methods: {
-            getImg: function(){
-                let that = this;
-                that.$http({           //调用接口
-                    method:'GET',
-                    url: 'http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1'
-                }).then(function(response){  //接口返回数据
-                    this.imgList = response.body.images[0]
-                    console.log(this.imgList)
-                    this.url=this.getImgUrl+response.body.images[0].url
-                },function(error){
-                })
-            }
+            getImg() {
+                this.$jsonp('https://jsonp.afeld.me/?callback=getImg&url=https%3A%2F%2Fcn.bing.com%2FHPImageArchive.aspx%3Fformat%3Djs%26idx%3D0%26n%3D1')
+                    .then(data => {
+                        this.imgList = data.images[0]
+                        console.log(this.imgList)
+                        this.url = this.getImgUrl + data.images[0].url
+                    })
+            },
         }
     }
 </script>
@@ -66,5 +64,19 @@
         line-height: 40px;
         text-transform: none;
         letter-spacing: normal;
+    }
+    .header .tips {
+        position: absolute;
+        right: 30px;
+        left: 30px;
+        bottom: 0;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        font-size: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: right;
     }
 </style>
