@@ -79,31 +79,34 @@ p {
     height: 0;
 }
 /*-- header --*/ 
-.jarallax {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+.home {
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: url("../images/main.jpg") no-repeat center/cover;
 }
 h1 a.navbar-brand {
     font-size: 1em;
-    color: #fff !important;
+    color: #fff;
     padding: 0;
     height: inherit;
-    margin: 10px 0;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+    margin: 6px 0;
 }
 h1 a.navbar-brand img {
     width: 36px;
     vertical-align: middle;
     border: none;
+    margin-left: 20px;
 }
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: 15px;
+.navbar > .container .navbar-brand, .navbar > .container .navbar-brand {
+    margin-left: 5px;
 }
 nav.navbar.navbar-default.navbar-fixed-top {
-    background:rgba(0, 0, 0, 0.1);
+    background:rgba(0, 0, 0, 0.4);
     border: none;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all; 
@@ -111,21 +114,21 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
 	padding:1em;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #000;
+.nav .navbar-nav .navbar-right .active,
+.nav .navbar-nav .navbar-right .active:hover,
+.nav .navbar-nav .navbar-right .active:focus {
+    color: #ff6a1e;
     background-color:#FFF;
     padding: 1em 1.5em;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    border-bottom: 1px solid #f4c2ec;
+    border-bottom: 1px solid #fff8d6;
 }
 nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     padding: 0;
@@ -144,7 +147,11 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     margin: 1em;
 	background:#fff;
 }
-
+header.home .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .banner-text h3 {
     color: #fff;
     font-size: 2em;
@@ -158,12 +165,8 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.header {
-    background:url(../images/1.jpg) center no-repeat;
-    background-size: cover;
-}
 .banner-text.text-center {
-    padding: 21em 0 9em;
+    padding: 11em 0 9em;
 }
 /*-- //header --*/ 
 .scroll-down a span{
@@ -1283,7 +1286,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		display:none;
 	}
 	.banner-text.text-center {
-		padding: 6em 0 0em;
+		padding: 9em 0 0em;
 	}
 	.w3-arrow {
 		margin-bottom: 2em;
@@ -1300,7 +1303,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		width: 49%;
 	}
 	.banner-text.text-center {
-		padding: 7em 0 0;
+		margin: auto 0;
 	}
 	h3.w3l-heading {
 		width: 45%;

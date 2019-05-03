@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/tonycatgogogo/tonycatgogogo.github.io/issues"
   },
-  "homepage": "https://github.com/tonycatgogogo/tonycatgogogo.github.io#readme",
+  "homepage": "https://github.com/tonycatgogogo/tonycatgogogo.github.io/dist/index.html",
   "dependencies": {
     "webpack": "^4.30.0"
   },
