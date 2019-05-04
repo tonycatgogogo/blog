@@ -50,21 +50,21 @@
                     <div class="about-skill-bar">
                         <em>PHOTOSHOP</em>
                         <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="40%" style="background: rgb(26, 188, 156); width: 40%;">
+                            <div class="bar-bottom-f" data-percentage="35%" style="background: rgb(26, 188, 156); width: 35%;">
                             </div>
                         </div>
                     </div>
                     <div class="about-skill-bar">
                         <em>CSS3</em>
                         <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="60%" style="background: rgb(231, 76, 60); width: 60%;">
+                            <div class="bar-bottom-f" data-percentage="55%" style="background: rgb(231, 76, 60); width: 55%;">
                             </div>
                         </div>
                     </div>
                     <div class="about-skill-bar">
                         <em>HTML5</em>
                         <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="70%" style="background: rgb(52, 73, 94); width: 70%;">
+                            <div class="bar-bottom-f" data-percentage="60%" style="background: rgb(52, 73, 94); width: 60%;">
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                     <div class="about-skill-bar">
                         <em>Bootstrap</em>
                         <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="60%" style="background: rgb(52,182,44); width: 60%;">
+                            <div class="bar-bottom-f" data-percentage="55%" style="background: rgb(52,182,44); width: 55%;">
                             </div>
                         </div>
                     </div>
@@ -138,6 +138,13 @@
         .about-me-title i {
             margin-left: 63%;
         }
+        /*.about-me-info .w3ls-about-info {*/
+            /*position: absolute;*/
+            /*left: 36%;*/
+            /*top: 15%;*/
+            /*font-size: 14px;*/
+            /*margin: 5px 15px;*/
+        /*}*/
     }
     @media screen and (max-width: 1030px){
         .about-me-title h3,
@@ -196,26 +203,26 @@
         font-size: 18px;
         line-height: 32px;
     }
-    .about-me-info .intro {
-        text-indent: 32px;
-    }
     .about-me-info .w3ls-about-info {
         display: block;
         margin: 10px 0;
         font-size: 14px;
+    }
+    .about-me-info .intro {
+        text-indent: 32px;
     }
     .about-me-info .row {
         margin: 0 auto;
     }
     .about-skill-bar {
         width: 100%;
-        margin-top: 2%;
+        margin-top: 1%;
         color: #333;
     }
     .about-skill-bar em {
         text-transform: uppercase;
         font-style: normal;
-        font-size: 20px;
+        font-size: 16px;
     }
     .about-skill-bar .bar-bottom{
         width: 100%;
