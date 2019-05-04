@@ -17,6 +17,8 @@ Vue.filter('dateFormat', function (dataStr, pattern = 'YYYY-MM-DD') {
 import vueJsonp from 'vue-jsonp'
 Vue.use(vueJsonp)
 import "./../node_modules/bootstrap/dist/js/bootstrap.min.js"
+import animate from 'animate.css'
+import $ from 'jquery'
 import router from './router.js'
 
 import app from './App.vue'

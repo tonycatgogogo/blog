@@ -1,23 +1,23 @@
 <template>
     <div class="header home" id="home" :style="
-     {backgroundImage:'url('+this.url+')'}">
+     {backgroundImage:'url('+this.url+')'}" @click="hide">
         <div class="container">
             <div class="banner-text text-center">
-                <h2>我是巩海涛</h2>
-                <h3> - 前端工程师 - </h3>
-                <p>相信代码可以改变世界 </p>
+                        <h2>我是巩海涛</h2>
+                        <h3> - 前端工程师 - </h3>
+                        <p>相信代码可以改变世界 </p>
                 <div class="home_content row">
                     <span class="time col-xs-12" v-if="imgList.enddate">{{(imgList.enddate) | dateFormat}}</span>
                     <p class="disc col-xs-12" :key="imgList.enddate">{{imgList.copyright}}</p>
                 </div>
-                <span title="bing" class="tips">每日一图由 bing 提供 | Copyright © 2016~2019 DAIWEI.ORG
+                <span title="bing" class="tips">每日一图由 bing 提供 | 其他都由TonyCat提供
                 </span>
             </div>
         </div>
     </div>
 </template>
-
 <script>
+    import $ from 'jquery'
     export default {
         data() {
             return {
@@ -38,6 +38,9 @@
                         this.url = this.getImgUrl + data.images[0].url
                     })
             },
+            hide(){
+                $('.collapse').removeClass('show')
+            }
         }
     }
 </script>

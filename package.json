@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/tonycatgogogo/tonycatgogogo.github.io/dist/index.html",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "vue-jsonp": "^0.1.8",
     "webpack": "^4.30.0"
   },
@@ -33,6 +34,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "babel-polyfill": "^6.26.0",
+    "better-scroll": "^0.1.15",
     "bootstrap": "^4.3.1",
     "css-loader": "^2.1.1",
     "element-ui": "^2.8.2",
