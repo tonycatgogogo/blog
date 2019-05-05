@@ -14,6 +14,9 @@ import moment from 'moment'
 Vue.filter('dateFormat', function (dataStr, pattern = 'YYYY-MM-DD') {
     return moment(dataStr).format(pattern)
 })
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI)
 import vueJsonp from 'vue-jsonp'
 Vue.use(vueJsonp)
 import "./../node_modules/bootstrap/dist/js/bootstrap.min.js"

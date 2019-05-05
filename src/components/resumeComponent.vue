@@ -28,6 +28,35 @@
                         希望将H5、C3、Bootstrap、Vue等技术都提升至更高水准，业精于勤，熟而能取其巧。
                     </p>
                 </div>
+                <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">基本信息</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered table-hover table-condensed">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">教育背景</th>
+                                    <td>2010.9-2014.7</td>
+                                    <td>沈阳建筑大学</td>
+                                    <td>电气工程专业</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">个人技能</th>
+                                    <td>英语六级,读写能力突出</td>
+                                    <td>通讯类稿件撰写</td>
+                                    <td>擅长标书及策划类文案</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">工作经历</th>
+                                    <td>2014.7-2018.11</td>
+                                    <td>中建八局海外事业部</td>
+                                    <td>市场经理</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
             </div>
             <div class="about-skill">
                 <div class="about-skill-title">
@@ -48,9 +77,9 @@
                 </p>
                 <div class="about-skill-chart">
                     <div class="about-skill-bar">
-                        <em>PHOTOSHOP</em>
+                        <em>HTML5</em>
                         <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="35%" style="background: rgb(26, 188, 156); width: 35%;">
+                            <div class="bar-bottom-f" data-percentage="60%" style="background: rgb(52, 73, 94); width: 60%;">
                             </div>
                         </div>
                     </div>
@@ -62,9 +91,9 @@
                         </div>
                     </div>
                     <div class="about-skill-bar">
-                        <em>HTML5</em>
+                        <em>ES6</em>
                         <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="60%" style="background: rgb(52, 73, 94); width: 60%;">
+                            <div class="bar-bottom-f" data-percentage="50%" style="background: rgb(211, 84, 0); width: 50%;">
                             </div>
                         </div>
                     </div>
@@ -72,13 +101,6 @@
                         <em>JQUERY</em>
                         <div class="bar-bottom">
                             <div class="bar-bottom-f" data-percentage="45%" style="background: rgb(52, 152, 219); width: 45%;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-skill-bar">
-                        <em>ES6</em>
-                        <div class="bar-bottom">
-                            <div class="bar-bottom-f" data-percentage="50%" style="background: rgb(211, 84, 0); width: 50%;">
                             </div>
                         </div>
                     </div>
@@ -93,6 +115,13 @@
                         <em>Bootstrap</em>
                         <div class="bar-bottom">
                             <div class="bar-bottom-f" data-percentage="55%" style="background: rgb(52,182,44); width: 55%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-skill-bar">
+                        <em>PHOTOSHOP</em>
+                        <div class="bar-bottom">
+                            <div class="bar-bottom-f" data-percentage="35%" style="background: rgb(26, 188, 156); width: 35%;">
                             </div>
                         </div>
                     </div>
@@ -239,5 +268,8 @@
         background: #1abc9c;
         height: 100%;
         border-radius: 5px;
+    }
+    .panel-body {
+        padding: 5px 5px 0;
     }
 </style>

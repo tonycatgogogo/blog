@@ -25,7 +25,7 @@
                                 <router-link class="page-scroll scroll" tag="a" to="/resume">简历</router-link>
                             </li>
                             <li>
-                                <router-link class="page-scroll scroll" tag="a" to="/home">个人作品</router-link>
+                                <router-link class="page-scroll scroll" tag="a" to="/project">个人作品</router-link>
                             </li>
                             <li>
                                 <router-link class="page-scroll scroll" tag="a" to="/home">UI组件</router-link>
@@ -71,7 +71,6 @@
     @import "../static/lib/bootstrap/css/bootstrap.min.css";
     @import "../static/css/style.css";
     @import "../static/font-icon/style.css";
-
     .v-enter {
         opacity: 0;
         transform: translateX(100%);

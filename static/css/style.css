@@ -105,7 +105,7 @@ h1 a.navbar-brand img {
     margin-left: 5px;
 }
 nav.navbar.navbar-default.navbar-fixed-top {
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.4);
     border: none;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all; 
@@ -324,7 +324,6 @@ figcaption.w3layouts-caption h3 {
 	font-weight: 400;
 	font-size: 1.8em;
 	color: #fff;
-	text-transform: uppercase;
 	padding: 10px 0px;
 	margin-bottom: 0;
 	background: #111;
@@ -395,7 +394,6 @@ figcaption.w3layouts-caption:hover {
 	background-color: rgba(0,0,0,0.5);
 	color: white;
 	position: absolute;
-	text-transform: uppercase;
 	text-align: center;
 	z-index: 1;
 }
