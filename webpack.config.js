@@ -1,6 +1,9 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const uglify = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 module.exports = {
     entry: {
         app: __dirname + '/src/index.js',//唯一入口文件,__dirname是nodejs里的一个全局变量，它指向的是我们项目的根目录
@@ -20,8 +23,7 @@ module.exports = {
                 use: ['style-loader', 'css-loader?modules&localIdentName=[path][name]-[local]-[hash:5]', 'sass-loader']
             },
             {test: /\.vue$/, use: 'vue-loader'},
-            {test: /\.(jpg|png|gif|bmp|jpeg)$/, use: 'url-loader'},
-
+            {test: /\.(jpg|png|gif|bmp|jpeg)$/, use: 'url-loader'}
         ]
     },
     resolve: {
@@ -35,6 +37,9 @@ module.exports = {
             template: path.join(__dirname, './src/index.html'),
             filename: "./index.html"
         }),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new uglify(),
+        new CleanWebpackPlugin(),
+        new BundleAnalyzerPlugin({ analyzerPort: 8919 })
     ]
 }

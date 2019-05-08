@@ -335,11 +335,6 @@ figcaption.w3layouts-caption h3 {
 	-o-transition: all .5s;
 	-ms-transition: all .5s;
 	transition: all .5s;
-	-webkit-transition-delay: 1s;
-	-moz-transition-delay: 1s;
-	-o-transition-delay: 1s;
-	-ms-transition-delay: 1s;
-	transition-delay: 1s;
 }
 
 figcaption.w3layouts-caption p {
@@ -384,7 +379,7 @@ figcaption.w3layouts-caption:hover {
 
 .filtr-item {
 	padding: 0em;
-	width: 24.8%;
+	width: 25%;
 	float: left;
 }
 .filtr-container {
@@ -631,7 +626,6 @@ span.edu-circle {
 	padding: 3em;
 	width: 60%;
 	margin: 3em auto;
-	background: url(../images/1.jpg) center no-repeat;
 	border: 1px solid #d2cece;
 }
 .w3_agile-contact input.name {

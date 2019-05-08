@@ -135,8 +135,12 @@
     import $ from 'jquery'
     export default {
         data() {
-            return {
+            return{
+
             }
+        },
+        created(){
+
         },
         methods: {
             hide(){

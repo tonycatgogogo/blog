@@ -27,21 +27,18 @@
                             <li>
                                 <router-link class="page-scroll scroll" tag="a" to="/project">个人作品</router-link>
                             </li>
-                            <li>
-                                <router-link class="page-scroll scroll" tag="a" to="/home">UI组件</router-link>
-                            </li>
                             <li><a class="page-scroll scroll" href="https://me.csdn.net/tonycatgogogo" target="_black">博客</a>
                             </li>
                             <li>
-                                <router-link class="page-scroll scroll" tag="a" to="/home">联系我吧</router-link>
+                                <router-link class="page-scroll scroll" tag="a" to="/contact">联系我吧</router-link>
                             </li>
-                            <li><a class="page-scroll scroll" href="https://github.com/tonycatgogogo/blog"
+                            <li><a class="page-scroll scroll" href="https://github.com/tonycatgogogo"
                                    target="_black">
                                 <span class="icon-github"></span>
                             </a></li>
                             <li>
-                                <router-link class="page-scroll scroll" tag="a" to="/home"><span
-                                        class="icon-setting"></span></router-link>
+                                <a class="page-scroll scroll" href="#"><span
+                                        class="icon-cog"></span></a>
                             </li>
                         </ul>
                     </div>
@@ -59,12 +56,14 @@
 <script>
     export default {
         data() {
-            return {}
+            return {
+            }
         },
-        created() {
+        created(){
+        },
+        methods: {
 
-        },
-        methods: {}
+        }
     }
 </script>
 <style lang="css" scoped>

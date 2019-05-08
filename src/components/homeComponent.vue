@@ -23,7 +23,7 @@
             return {
                 imgList:{},
                 url: '',
-                getImgUrl: 'https://s.cn.bing.net'
+                getImgUrl: 'https://s.cn.bing.net',
             }
         },
         created(){
